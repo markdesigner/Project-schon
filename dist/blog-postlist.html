@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="pics/logo_small.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i|Oxygen:300,400,700"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/fontello.css">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Schon Blog</title>
+</head>
+
+<body class="blog-postlist">
+
+
+    <div class="header full_width my-2">
+        <div class="container-fluid">
+
+            <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+                <a id="logo" class="navbar-brand" href="index.html"><img src="pics/logo.png" alt="logo"></a>
+                <div class="phone navbar-brand">
+                    <a href="tel:+1(555)333 22 11">
+                        +1(555)333 22 11</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+
+                            <button type="button" class="nav-link mx-auto products_dropdown" data-toggle="modal"
+                                data-target="#products-modal">
+                                PRODUCTS <i class="fas fa-angle-down"></i>
+                            </button>
+
+                        </li>
+                        <div class="modal fade" id="products-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content text-left">
+
+                                    <div class="modal-body">
+                                        <div class="row menu">
+                                            <div class="col-md-6 col-lg categories">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item title">SOFAS & ARMCHAIRS</li>
+                                                    <hr class="short_strong text-left mr-auto ml-0">
+                                                    <li class="list-group-item"><a href="product-list.html">Sofas</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Armchairs</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Poufs</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Footstools</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Lounge
+                                                            Chairs</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6 col-lg categories">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item title">TABLES & CHAIRS</li>
+                                                    <hr class="short_strong text-left mr-auto ml-0">
+                                                    <li class="list-group-item"><a href="product-list.html">Chairs</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Stools</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Benches</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Coffe
+                                                            Tables</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Console
+                                                            Tables</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Secretary
+                                                            Desks</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6 col-lg categories">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item title">KITCHEN FURNITURE</li>
+                                                    <hr class="short_strong text-left mr-auto ml-0">
+                                                    <li class="list-group-item"><a href="product-list.html">Kitchen
+                                                            Taps</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Breakfast
+                                                            time</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Cooking</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Food
+                                                            Storage Boxes</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Spice Jars</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Napskins</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Oven Gloves</a></li>
+
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6 col-lg categories">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item title">OFFICE</li>
+                                                    <hr class="short_strong text-left mr-auto ml-0">
+                                                    <li class="list-group-item"><a href="product-list.html">office
+                                                            Desks</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Meeting
+                                                            Tables</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Task Chairs</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6 col-lg categories">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item title">LIGHTING</li>
+                                                    <hr class="short_strong text-left mr-auto ml-0">
+                                                    <li class="list-group-item"><a href="product-list.html">FLOOR Lamps</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Wall Lamps</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Ceiling
+                                                            Lamps</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Table Lamps</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Spotlights</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Light
+                                                            Letters</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row hot_products">
+                                            <div class="col-md-12 col-lg-6 pb-4">
+                                                <div class="hot-1 position-relative">
+                                                    <img class="photo" src="pics/products_dropdown/product-1.png" alt="hot-product-1">
+                                                    <div class="words position-absolute">
+                                                        <h3 class="hot-1-title text-center">SOFAS</h3>
+                                                        <p class="discount text-center">50% OFF</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-6">
+                                                <div class="hot-2 position-relative">
+                                                    <img class="hot-2" src="pics/products_dropdown/product-2.png" alt="hot-product-2">
+                                                    <div class="words position-absolute">
+                                                        <h4 class="hot-2-title">TOTEM FLOOR LAMP</h4>
+                                                        <a class="action" href="#">SHOP NOW</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog-detail.html">PAGES</a>
+                        </li>
+                        <div class="modal fade" id="products-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content text-left">
+                                    <div id="triangle"></div>
+                                    <div class="modal-body">
+                                        <div class="row menu">
+                                            <div class="col-md-6 col-lg categories">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item title">SOFAS & ARMCHAIRS</li>
+                                                    <hr class="short_strong text-left mr-auto ml-0">
+                                                    <li class="list-group-item"><a href="product-list.html">Sofas</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Armchairs</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Poufs</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Footstools</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Lounge
+                                                            Chairs</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6 col-lg categories">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item title">TABLES & CHAIRS</li>
+                                                    <hr class="short_strong text-left mr-auto ml-0">
+                                                    <li class="list-group-item"><a href="product-list.html">Chairs</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Stools</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Benches</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Coffe
+                                                            Tables</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Console
+                                                            Tables</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Secretary
+                                                            Desks</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6 col-lg categories">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item title">KITCHEN FURNITURE</li>
+                                                    <hr class="short_strong text-left mr-auto ml-0">
+                                                    <li class="list-group-item"><a href="product-list.html">Kitchen
+                                                            Taps</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Breakfast
+                                                            time</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Cooking</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Food
+                                                            Storage Boxes</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Spice Jars</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Napskins</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Oven Gloves</a></li>
+
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6 col-lg categories">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item title">OFFICE</li>
+                                                    <hr class="short_strong text-left mr-auto ml-0">
+                                                    <li class="list-group-item"><a href="product-list.html">office
+                                                            Desks</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Meeting
+                                                            Tables</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Task Chairs</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6 col-lg categories">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item title">LIGHTING</li>
+                                                    <hr class="short_strong text-left mr-auto ml-0">
+                                                    <li class="list-group-item"><a href="product-list.html">FLOOR Lamps</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Wall Lamps</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Ceiling
+                                                            Lamps</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Table Lamps</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Spotlights</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Light
+                                                            Letters</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row hot_products">
+                                            <div class="col-md-12 col-lg-6 pb-4">
+                                                <div class="hot-1 position-relative">
+                                                    <img class="photo" src="pics/products_dropdown/product-1.png" alt="hot-product-1">
+                                                    <div class="words position-absolute">
+                                                        <h3 class="hot-1-title text-center">SOFAS</h3>
+                                                        <p class="discount text-center">50% OFF</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-6">
+                                                <div class="hot-2 position-relative">
+                                                    <img class="hot-2" src="pics/products_dropdown/product-2.png" alt="hot-product-2">
+                                                    <div class="words position-absolute">
+                                                        <h4 class="hot-2-title">TOTEM FLOOR LAMP</h4>
+                                                        <a class="action" href="#">SHOP NOW</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item search">
+                            <button type="button" class="btn" data-toggle="modal" data-target="#search-modal">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </li>
+                        <div class="search_box">
+                            <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="input-group m-auto">
+                                                <input type="text" class="search form-control" placeholder="Search..."
+                                                    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                                <button type="button" class="mic_bt btn"><i class="fas fa-microphone"></i></button>
+                                                <button type="button" class="search_bt btn" data-dismiss="modal"><i
+                                                        class="fas fa-search"></i></button>
+                                            </div>
+                                            <button type="button" class="cancel btn" data-dismiss="modal">&times;</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <li class="nav-item shopping_cart position-relative">
+                                <a class="nav-link " href="shopping-cart.html"><i class="fas fa-shopping-bag mr-2"></i>
+                                    <span class="position-absolute">3</span>
+                                </a>
+                            </li>
+                        <li class="nav-item search">
+                            <a class="nav-link" href="shopping-cart.html"><i class="fas fa-list-ul"></i></a>
+                        </li>
+
+
+
+
+                    </ul>
+
+
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <section class="cover grey_pad">
+        <div class="container-fluid">
+            <h2 class="title text-center">BLOG LIST SIDEBAR 2</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item" aria-current="page"><a href="blog-postlist.html">Blog</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Category</a></li>
+
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <main>
+        <div class="container">
+            <div class="row">
+                <section class="col-lg-8 articles">
+                        <article class="post-1 pb-5">
+                                <div class="blog_thumbnail">
+                                    <img src="http://unsplash.it/760/350" alt="blog_images">
+                                    <div class="date">
+                                        <div class="date_words">
+                                            <p class="day">25</p>
+                                            <p class="month">April</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog_meta">
+                                    <div class="container">
+                                        <h2 class="title pt-4">IDEAS FOR LIVING ROOMS</h2>
+                                        <div class="info">
+                                                    <div class="time pr-4 float-left"><i class="far fa-clock"></i> <span>20
+                                                            April 2015</span></div>
+                                                    <div class="category pr-4 float-left"><i class="fas fa-list-ul"></i> <span>Design</span></div>
+                                                    <div class="comments"><i class="fas fa-comment"></i> <span>2
+                                                            Comments</span></div>
+        
+                                        </div>
+                                        <div class="description py-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                            Animi
+                                            harum autem deserunt itaque quidem possimus expedita quasi hic ullam dolor eius
+                                            illo
+                                            natus
+                                            accusantium ex iure, quo sed maxime. Fuga.</div>
+                                        <a href="blog-detail.html" class="readmore">READ MORE</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="post-1 pb-5">
+                                    <div class="blog_thumbnail">
+                                        <img src="http://unsplash.it/760/350" alt="blog_images">
+                                        <div class="date">
+                                            <div class="date_words">
+                                                <p class="day">25</p>
+                                                <p class="month">April</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog_meta">
+                                        <div class="container">
+                                            <h2 class="title pt-4">IDEAS FOR LIVING ROOMS</h2>
+                                            <div class="info">
+                                                        <div class="time pr-4 float-left"><i class="far fa-clock"></i> <span>20
+                                                                April 2015</span></div>
+                                                        <div class="category pr-4 float-left"><i class="fas fa-list-ul"></i> <span>Design</span></div>
+                                                        <div class="comments"><i class="fas fa-comment"></i> <span>2
+                                                                Comments</span></div>
+            
+                                            </div>
+                                            <div class="description py-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                                Animi
+                                                harum autem deserunt itaque quidem possimus expedita quasi hic ullam dolor eius
+                                                illo
+                                                natus
+                                                accusantium ex iure, quo sed maxime. Fuga.</div>
+                                            <a href="blog-detail.html" class="readmore">READ MORE</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="post-1 pb-5">
+                                        <div class="blog_thumbnail">
+                                            <img src="http://unsplash.it/760/350" alt="blog_images">
+                                            <div class="date">
+                                                <div class="date_words">
+                                                    <p class="day">25</p>
+                                                    <p class="month">April</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="blog_meta">
+                                            <div class="container">
+                                                <h2 class="title pt-4">IDEAS FOR LIVING ROOMS</h2>
+                                                <div class="info">
+                                                            <div class="time pr-4 float-left"><i class="far fa-clock"></i> <span>20
+                                                                    April 2015</span></div>
+                                                            <div class="category pr-4 float-left"><i class="fas fa-list-ul"></i> <span>Design</span></div>
+                                                            <div class="comments"><i class="fas fa-comment"></i> <span>2
+                                                                    Comments</span></div>
+                
+                                                </div>
+                                                <div class="description py-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                                    Animi
+                                                    harum autem deserunt itaque quidem possimus expedita quasi hic ullam dolor eius
+                                                    illo
+                                                    natus
+                                                    accusantium ex iure, quo sed maxime. Fuga.</div>
+                                                <a href="blog-detail.html" class="readmore">READ MORE</a>
+                                            </div>
+                                        </div>
+                                    </article>
+
+                    <div class="prev_and_next d-flex pt-5">
+                        <button type="button" class="prev button mr-auto"> <i class="fas fa-angle-left"></i> PREVIOUS
+                        </button>
+                        <button type="button" class="next button"> NEXT <i class="fas fa-angle-right"></i> </button>
+                    </div>
+                </section>
+                <aside class="col-lg-4 sidebar text-right">
+                    <div class="container">
+                    <div class="categories pb-4">
+                        <h3 class="title">CATEGORIES</h3>
+                        <hr class="short_strong pb-4">
+                        <a href="#" class="category">Design</a> <br>
+                        <a href="#" class="category">Future</a> <br>
+                        <a href="#" class="category">Kitchen</a> <br>
+                        <a href="#" class="category">Photography</a>
+
+
+                    </div>
+                    <div class="popular_post py-4">
+                        <h3 class="title">POPULAR POST</h3>
+                        <hr class="short_strong pb-4">
+                        <div class="post">
+                            <div class="row mb-2">
+                                <div class="col-8 col-lg-9">
+                                    <p class="description">Vestibulum sit amet metus euismod amet metus euismod</p>
+                                    <p class="dates">24.09.2015</p>
+                                </div>
+                                <div class="col-4 col-lg-3 mt-2">
+                                    <a href="#"><img src="http://unsplash.it/64/64"></a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="post">
+                                <div class="row mb-2">
+                                    <div class="col-8 col-lg-9">
+                                        <p class="description">Vestibulum sit amet metus euismod amet metus euismod</p>
+                                        <p class="dates">24.09.2015</p>
+                                    </div>
+                                    <div class="col-4 col-lg-3 mt-2">
+                                        <a href="#"><img src="http://unsplash.it/64/64"></a>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <div class="post">
+                                    <div class="row mb-2">
+                                        <div class="col-8 col-lg-9">
+                                            <p class="description">Vestibulum sit amet metus euismod amet metus euismod</p>
+                                            <p class="dates">24.09.2015</p>
+                                        </div>
+                                        <div class="col-4 col-lg-3 mt-2">
+                                            <a href="#"><img src="http://unsplash.it/64/64"></a>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                                <div class="post">
+                                        <div class="row mb-2">
+                                            <div class="col-8 col-lg-9">
+                                                <p class="description">Vestibulum sit amet metus euismod amet metus euismod</p>
+                                                <p class="dates">24.09.2015</p>
+                                            </div>
+                                            <div class="col-4 col-lg-3 mt-2">
+                                                <a href="#"><img src="http://unsplash.it/64/64"></a>
+                                            </div>
+            
+                                        </div>
+                                    </div>
+
+                    </div>
+                    <div class="tags">
+                        <h3 class="title">TAGS</h3>
+                        <hr class="short_strong pb-2">
+                        <p class="tag">Fusce, mattis, nunc, lacus,
+                            vulputate, facilisis, dui,
+                            efficitur, ut</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="simple grey_pad">
+        <div class="container-fluid container-big">
+            <div class="container">
+                <div class="main_footer">
+
+                    <div class="row footer_info">
+                        <div class="col-md-8 site_link">
+                            <div class="row">
+                                <div class="col-md-3 products">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item title">PRODUCTS</li>
+                                        <li class="list-group-item"><a href="#">ALL</a></li>
+                                        <li class="list-group-item"><a href="#">Chairs</a></li>
+                                        <li class="list-group-item"><a href="#">Sofas</a></li>
+                                        <li class="list-group-item"><a href="#">Liveing</a></li>
+                                        <li class="list-group-item"><a href="#">Bedroom</a></li>
+                                        <li class="list-group-item"><a href="#">Tables</a></li>
+                                        <li class="list-group-item"><a href="#">New</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <ul class="list-group list-group-flush customer">
+                                        <li class="list-group-item title">CUSTOMER</li>
+                                        <li class="list-group-item"><a href="#">FAQ</a></li>
+                                        <li class="list-group-item"><a href="#">Support</a></li>
+                                        <li class="list-group-item"><a href="#">Repair Center</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 pages">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item title">PAGES</li>
+                                        <li class="list-group-item"><a href="index.html">Home</a></li>
+                                        <li class="list-group-item"><a href="contact.html">Contact</a></li>
+                                        <li class="list-group-item"><a href="#">Product</a></li>
+                                        <li class="list-group-item"><a href="about.html">About</a></li>
+                                        <li class="list-group-item"><a href="blog-postlist.html">Blog</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 socials">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item title">SOCIALS</li>
+                                        <li class="list-group-item"><a href="#">twitter</a></li>
+                                        <li class="list-group-item"><a href="#">facebook</a></li>
+                                        <li class="list-group-item"><a href="#">google+</a></li>
+                                        <li class="list-group-item"><a href="#">pinterest</a></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 contact">
+                            <img class="logo clearfix" src="pics/logo_AllBlack.png" alt="logo">
+
+                            <div class="address">
+                                <a href="#">
+
+                                    <i class="fas fa-map-marker-alt"></i> Connaugt Road Central Suite 18B,148 <br>
+                                    New Yankee
+                                </a>
+
+
+                            </div>
+                            <div class="phone">
+
+                                <a href="tel:+1(555)3332211"><i class="fas fa-phone"></i> +1(555)333 22 11</a>
+
+                            </div>
+                            <div class="mail">
+
+                                <a href="mailto:info@schon.chair"><i class="far fa-envelope"></i> info@schon.chair</a>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="all_rights">
+            <div class="container">
+                <img src="pics/payment_grey_small.png" alt="payment">
+
+                <p class="all_rights">Copyright schön. All rights Reserved</p>
+
+
+
+            </div>
+        </div>
+
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIJICdyJpHfzUrUArHDp6J6Ji309S-YYA&callback=initMap"
+        async defer></script>
+    <script src="js/action.js"></script>
+</body>
+
+</html>

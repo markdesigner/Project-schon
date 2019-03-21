@@ -1,0 +1,119 @@
+// @white_color: #ffffff;
+// @header_nav:#494949;
+// @short_info_text: #a1a1a1;
+// @top-bar-grey: #282828;
+// @deep-blue: #2c3e65;
+// @grey-text: #dbdbdb;
+// @grey_deep_text: #808080;
+// @black-text: #535353;
+// @grey_shopnow: #979797;
+// @black: #000000;
+// @footer_title: #575757;
+
+@import "basic.less";
+
+
+.page404 {
+    .wrap {
+        background-image: url(../pics/404bg.png);
+        background-size: cover;
+        height: 100vh;
+
+    }
+
+    .all {
+        padding-top: 180px;
+        color: @white_color;
+
+        .title {
+            font-family: @mont;
+            font-size: 26px;
+            font-weight: 600;
+        }
+
+        .homepage {
+            background-color: @white_color;
+            border-radius: 0px;
+            font-weight: 600;
+            padding-bottom: 10px;
+
+        }
+
+        .input-group {
+            border: solid 2px white;
+            border-radius: 0;
+
+        }
+        .user_action{
+            .fa-search{
+                margin-right: 15px;
+                margin-top: 10px;
+            }
+        }
+
+        .search {
+            border:none;
+            color: @white_color;
+            background-color: transparent;
+            
+            
+            &::placeholder {
+                color: @white_color;
+                font-size: 16px;
+
+            }
+
+
+        }
+        
+
+        .title_404 {
+            margin-left: 50px;
+            text-align: center;
+            font-size: 180px;
+            line-height: 0.5;
+            font-family: @mont;
+            font-weight: 700;
+        }
+
+
+    }
+
+    //media query 
+
+    // iphone
+    @media (max-width: 767.98px) {
+        .wrap {
+            height: 100vh;
+        }
+        .all {
+            padding-top: 100px;
+            .homepage{
+                margin-bottom: 10px;
+
+            }
+            .title_404 {
+                margin: 89px 0px 0px -20px;
+                font-size: 150px;
+            }
+        }
+    }
+
+    // ipad
+    @media (max-width: 991.98px)and (min-width:768px) {
+        .all {
+            padding-top: 100px;
+
+            .title_404 {
+                margin: 46px 0px 20px 20px;
+            }
+        }
+    }
+
+    // mac
+    // @media(min-width:992px)and(max-width:1200){
+
+    // }
+
+
+}

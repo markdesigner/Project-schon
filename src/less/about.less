@@ -1,0 +1,250 @@
+// @white_color: #ffffff;
+// @header_nav:#494949;
+// @short_info_text: #a1a1a1;
+// @top-bar-grey: #282828;
+// @deep-blue: #2c3e65;
+// @grey-text: #dbdbdb;
+// @grey_deep_text: #808080;
+// @black-text: #535353;
+// @grey_shopnow: #979797;
+// @black: #000000;
+// @footer_title: #575757;
+
+@import "basic.less";
+
+.about {
+
+    main {
+       
+
+        .who_we_are {
+            color: @header_nav;
+
+            .title {
+                font-size: calc(24rem/16);
+                ;
+                font-family: @open;
+                font-weight: 600;
+                margin-bottom: 40px;
+
+            }
+
+            .description {}
+
+            .social {
+                margin-top: 60px;
+
+                .follow {
+                    font-weight: 600;
+
+                }
+
+                .social_icon {
+                    a {
+                        color: @header_nav;
+
+                        i {
+                            margin-right: 0.5rem;
+                        }
+                    }
+
+
+                }
+
+            }
+        }
+
+        .team {
+            color: @header_nav;
+
+            .title {
+                font-weight: 600;
+                font-family: @mont;
+                font-size: calc(24rem/16);
+                margin-bottom: calc(35rem/16);
+            }
+
+            .person {
+                margin-top: 26px;
+
+                .avatar {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            
+            .block {
+                width: calc(7rem/16);
+                ;
+                height: calc(31rem/16);
+                ;
+                background-color: #eee;
+
+            }
+            .words{
+                margin-left: 10px;
+            }
+
+            .name {
+                font-family: @mont;
+                font-size: 16px;
+                font-weight: 600;
+
+            }
+
+            .position {
+                font-size: 10px;
+                color: @grey_deep_text;
+            }
+
+
+        }
+
+        .workspace {
+            .title {
+                font-weight: 600;
+                font-family: @mont;
+                font-size: calc(24rem/16);
+                margin-bottom: calc(35rem/16);
+            }
+
+            .brands_bar {
+                position: relative;
+
+                .workspace_bt_prev {
+                    padding: 15px;
+                    z-index: 2;
+                    position: absolute;
+                    top: 40%;
+                    left: 50px;
+                }
+
+                .workspace_bt_next {
+                    padding: 15px;
+
+                    z-index: 2;
+                    position: absolute;
+                    top: 40%;
+                    right: 50px;
+                }
+            }
+
+
+        }
+
+    }
+
+
+    //media query 
+
+    // iphone
+    @media (max-width: 767.98px) {
+        main {
+            .who_we_are {
+                .follow {
+                    text-align: center;
+                }
+
+                .social_icon {
+                    text-align: center;
+                }
+
+            }
+
+            .team {
+                .person {
+                    .avatar {
+                        margin: 0 auto;
+                    }
+                }
+            }
+
+            .workspace {
+
+                .brands_bar {
+                    position: relative;
+
+                    .workspace_bt_prev {
+                        padding: 15px;
+
+                        z-index: 2;
+                        position: absolute;
+                        top: 40%;
+                        left: 10px;
+                    }
+
+                    .workspace_bt_next {
+                        padding: 15px;
+
+                        z-index: 2;
+                        position: absolute;
+                        top: 40%;
+                        right: 10px;
+                    }
+                }
+
+
+            }
+
+        }
+    }
+
+
+
+    // ipad
+    @media (max-width: 991.98px)and (min-width:768px) {
+        main {
+   
+
+            .workspace {
+
+                .brands_bar {
+                    position: relative;
+
+                    .workspace_bt_prev {
+                        padding: 15px;
+
+                        z-index: 2;
+                        position: absolute;
+                        top: 40%;
+                        left: 10px;
+                    }
+
+                    .workspace_bt_next {
+                        padding: 15px;
+
+                        z-index: 2;
+                        position: absolute;
+                        top: 40%;
+                        right: 10px;
+                    }
+                }
+
+
+            }
+        }
+
+    }
+
+    // mac
+    @media(min-width:992px)and (max-width: 1200px){
+        main{
+            .team {
+                .person {
+                    .avatar {
+                        margin: 0 auto;
+                    }
+                }
+    
+               
+            }
+        }
+       
+
+    }
+
+
+
+}

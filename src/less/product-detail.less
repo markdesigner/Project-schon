@@ -1,0 +1,185 @@
+// @white_color: #ffffff;
+// @header_nav:#494949;
+// @short_info_text: #a1a1a1;
+// @top-bar-grey: #282828;
+// @deep-blue: #2c3e65;
+// @grey-text: #dbdbdb;
+// @grey_deep_text: #808080;
+// @black-text: #535353;
+// @grey_shopnow: #979797;
+// @black: #000000;
+// @footer_title: #575757;
+// @aside_grey:#a0a0a0;
+
+@import "basic.less";
+
+
+.product-detail {
+    main{
+        .product_images{
+            padding: 80px 20px;
+            .social{
+                margin-bottom: 20px;
+                margin-top: -20px;
+            }
+            .other_images{
+                margin-top: 20px;
+            }
+            .control{
+                align-self: center;
+                padding-left: 0;
+                .control_bt{
+                    background: @white_color;
+                    padding: 35px 15px 35px 8px;
+                    color:@header_nav;
+                    
+                }
+            }
+        }
+        .product_intro{
+            padding: 60px 40px;
+            color:#BEBEBE;
+            .title{
+                color:@black;
+                letter-spacing: 3px;
+                font-weight: 300;
+                font-size: 40px;
+
+            }
+            .breadcrumb{
+                
+                padding: 0;
+                justify-content: flex-start;
+                a{
+                    color:#BEBEBE;
+                }
+            }
+            .social{
+                margin: 30px 0;
+                a{
+                    color:#b6b6b6;
+                    font-family: @mont;
+                    font-weight: 400;
+                    margin-right: 15px;
+                }
+            }
+            .review{
+                color:#c8a760;
+            }
+            .description{
+                font-weight: 300;
+            }
+            .price{
+                margin-top: 20px;
+                font-family: @mont;
+                font-weight: 500;
+            }
+            .discount_price{
+                color:black;
+                font-size: 26px;
+                
+            }
+            .quantity{
+                margin-top: 25px;
+                .name{
+                    margin-top: 6px;
+                }
+                .custom-select{
+                    max-width: 60px;
+                    padding-left: 18px;
+                }
+            }
+        }
+        .info{
+            .nav-tabs{
+                justify-content: center;
+            }
+            .nav-link{
+                border:none;
+                color:#9B9B9B;
+                font-weight: 600;
+                
+                &:hover{
+                    color:#171717;
+                    
+                }
+                &.active{
+                    border-bottom: solid 3px black;
+                    color:#171717;
+                }
+            }
+            .tab-pane{
+                margin-top: 40px;
+                color: #9B9B9B;
+                font-weight: 300;
+            }
+        }
+    }
+   footer{
+       .container-fluid{
+        padding-top: 50px;
+       }
+    
+   }
+
+    //media query 
+
+    // iphone
+    @media (max-width: 767.98px) {
+        main{
+            .product_images{
+                padding-bottom: 20px;
+                .control{
+                    margin-left: -5px;
+                    .control_bt{
+                        padding: 26px 15px 26px 8px;
+                    }
+                }
+            }
+            .product_intro{
+                padding-top: 20px;
+                .social{
+                    a{
+                        display: block;
+                        margin: 10px 0;
+                    }
+                }
+            }
+            .info{
+                .nav-link{
+                        font-size: 14px;
+                }
+            }
+
+        }
+        footer{
+            .main_footer{
+                .subscribe{
+                    text-align: center !important;
+                }
+            }
+        }
+        
+    }
+
+    // ipad
+    @media (max-width: 991.98px)and (min-width:768px) {
+        aside{
+            .hot_sale{
+                .col-md-3{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .page_number{
+            margin-bottom: 100px;
+        }
+    }
+
+    // mac
+    // @media(min-width:992px){
+
+    // }
+
+
+}

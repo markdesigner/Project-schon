@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="pics/logo_small.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="plug_in/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="plug_in/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i|Oxygen:300,400,700"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Schon Shopping Cart</title>
+</head>
+
+<body class="shopping-cart">
+    <section class="header_wrap">
+        <div class="grey_pad">
+            <div class="container">
+                <div class="short_info order no_bg">
+                    <div class="container clearfix info_container">
+                        <ul class="nav contact_info float-left">
+                            <li class="nav-item">
+                                <div class="mail">
+                                    <a class="nav-link" href="mailto:info@schon.chair"><i class="far fa-envelope"></i>
+                                        info@schon.chair</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="nav user_bt float-right">
+                            <li class="nav-item">
+                                <a class="nav-link login" href="page404.html">Login or Create Account</a>
+                            </li>
+                            <span class="divider_line">|</span>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Language</a>
+                                <div class="dropdown-menu language">
+                                    <a class="dropdown-item" href="#">繁體中文</a>
+                                    <a class="dropdown-item" href="#">English</a>
+                                    <a class="dropdown-item" href="#">日本語</a>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <header class="header my-2">
+                    <div class="bg-white">
+
+                        <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+                            <a id="logo" class="navbar-brand" href="index.html"><img src="pics/logo.png" alt="logo"></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto text-center">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <button type="button" id="products_dropdown" class="nav-link mx-auto products_dropdown"
+                                            data-toggle="modal" data-target="#products-modal">
+                                            PRODUCTS <i class="fas fa-angle-down"></i>
+                                        </button>
+            
+                                    </li>
+                                    <div class="modal fade" id="products-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                        aria-hidden="true">
+            
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content text-left">
+                                                <div class="modal-body">
+                                                    <div class="row menu">
+                                                        <div class="col-md-6 col-lg categories">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item title">SOFAS & ARMCHAIRS</li>
+                                                                <hr class="short_strong text-left mr-auto ml-0">
+                                                                <li class="list-group-item"><a href="product-list.html">Sofas</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Armchairs</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Poufs</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Footstools</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Lounge
+                                                                        Chairs</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg categories">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item title">TABLES & CHAIRS</li>
+                                                                <hr class="short_strong text-left mr-auto ml-0">
+                                                                <li class="list-group-item"><a href="product-list.html">Chairs</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Stools</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Benches</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Coffe
+                                                                        Tables</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Console
+                                                                        Tables</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Secretary
+                                                                        Desks</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg categories">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item title">KITCHEN FURNITURE</li>
+                                                                <hr class="short_strong text-left mr-auto ml-0">
+                                                                <li class="list-group-item"><a href="product-list.html">Kitchen
+                                                                        Taps</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Breakfast
+                                                                        time</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Cooking</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Food
+                                                                        Storage Boxes</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Spice
+                                                                        Jars</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Napskins</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Oven
+                                                                        Gloves</a></li>
+            
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg categories">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item title">OFFICE</li>
+                                                                <hr class="short_strong text-left mr-auto ml-0">
+                                                                <li class="list-group-item"><a href="product-list.html">office
+                                                                        Desks</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Meeting
+                                                                        Tables</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Task
+                                                                        Chairs</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg categories">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item title">LIGHTING</li>
+                                                                <hr class="short_strong text-left mr-auto ml-0">
+                                                                <li class="list-group-item"><a href="product-list.html">FLOOR
+                                                                        Lamps</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Wall
+                                                                        Lamps</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Ceiling
+                                                                        Lamps</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Table
+                                                                        Lamps</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Spotlights</a></li>
+                                                                <li class="list-group-item"><a href="product-list.html">Light
+                                                                        Letters</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row hot_products">
+                                                        <div class="col-md-12 col-lg-6 pb-4">
+                                                            <div class="hot-1 position-relative">
+                                                                <img class="photo" src="pics/products_dropdown/product-1.png" alt="hot-product-1">
+                                                                <div class="words position-absolute">
+                                                                    <h3 class="hot-1-title text-center">SOFAS</h3>
+                                                                    <p class="discount text-center">50% OFF</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 col-lg-6">
+                                                            <div class="hot-2 position-relative">
+                                                                <img class="hot-2" src="pics/products_dropdown/product-2.png" alt="hot-product-2">
+                                                                <div class="words position-absolute">
+                                                                    <h4 class="hot-2-title">TOTEM FLOOR LAMP</h4>
+                                                                    <a class="action" href="#">SHOP NOW</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="blog-detail.html">PAGES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">ABOUT</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="blog-postlist.html">BLOG</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">CONTACT</a>
+                                    </li>
+                                    <li class="nav-item search">
+                                        <button type="button" class="btn" data-toggle="modal" data-target="#search-modal">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </li>
+                                    <div class="search_box">
+                                        <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <div class="input-group m-auto">
+                                                            <input type="text" class="search form-control" placeholder="Search..."
+                                                                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                                            <button type="button" class="mic_bt btn"><i class="fas fa-microphone"></i></button>
+                                                            <button type="button" class="search_bt btn" data-dismiss="modal"><i
+                                                                    class="fas fa-search"></i></button>
+                                                        </div>
+                                                        <button type="button" class="cancel btn" data-dismiss="modal">&times;</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <li class="nav-item shopping_cart">
+
+                                        <a class="nav-link " href="shopping-cart.html"><i class="fas fa-shopping-bag mr-2"></i>
+                                            <div class="word"><strong>SHOPPING CART</strong>
+                                                <br>3 items
+                                                $74.00
+                                            </div>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+
+
+                            </div>
+                        </nav>
+                    </div>
+                </header>
+                <h2 class="headline strong_black text-center">SHOPPING CART</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item" aria-current="page"><a href="shopping-cart.html">Shopping Cart</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <main>
+
+        <section class="navigation">
+            <div class="container">
+                <div class="wrap clearfix">
+                    <div class="one float-left">
+                        <p class="number">01</p>
+                        <p class="title">Shopping Cart</p>
+
+
+                    </div>
+                    <div class="line float-left mx-2">
+                        <hr>
+                    </div>
+                    <div class="two float-left">
+                        <p class="number">02</p>
+                        <p class="title">Check Out</p>
+
+
+                    </div>
+                    <div class="line float-left mx-2">
+                        <hr>
+                    </div>
+
+                    <div class="three float-left">
+                        <p class="number">03</p>
+                        <p class="title">Order Complete</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product">
+            <div class="container table-responsive-sm">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col image">PRODUCT</th>
+                            <th scope="col name"></th>
+                            <th scope="col price">PRICE</th>
+                            <th scope="col quantity">QUANTITY</th>
+                            <th scope="col total">TOTAL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <img src="http://unsplash.it/106/106" alt="product">
+                            </th>
+                            <td class="name">Marvelous Modern 3 Seater</td>
+                            <td class="price">$599,00</td>
+                            <td class="quantity">
+                                <select class="custom-select " id="inlineFormCustomSelectPref">
+                                    <option selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </td>
+                            <td class="total">$599,00</td>
+                            <td class="cancel"><a class="cancel" href="#"> &times;</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <img src="http://unsplash.it/106/106" alt="product">
+                            </th>
+                            <td class="name">Marvelous Modern 3 Seater</td>
+                            <td class="price">$599,00</td>
+                            <td class="quantity">
+                                <select class="custom-select " id="inlineFormCustomSelectPref">
+                                    <option selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </td>
+                            <td class="total">$599,00</td>
+                            <td class="cancel"><a class="cancel" href="#"> &times;</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <img src="http://unsplash.it/106/106" alt="product">
+                            </th>
+                            <td class="name">Marvelous Modern 3 Seater</td>
+                            <td class="price">$599,00</td>
+                            <td class="quantity">
+                                <select class="custom-select " id="inlineFormCustomSelectPref"> <i class="fa fa-chevron-down"></i>
+                                    <option selected>1<i class="fas fa-angle-down"></i></option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </td>
+                            <td class="total">$599,00</td>
+                            <td class="cancel"><a class="cancel" href="#"> &times;</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+            </div>
+
+        </section>
+        <section class="discount_code">
+            <div class="container">
+                <div class="row input">
+                    <div class="offset-md-4"></div>
+                    <div class="col-12 col-md-4">
+                        <div class="container">
+                            <div class="row user_input">
+                                <div class="col-8">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control code_input" placeholder="Your Coupon Code">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <button type="submit" class="apply btn px-3"> <a href="checkout.html" style="color:white">APPLY</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offset-md-4"></div>
+                </div>
+                <hr>
+            </div>
+        </section>
+        <section class="calculate">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 district">
+                        <p class="title strong_black">CALCULATE SHIPPING</p>
+                        <select class="custom-select country" id="inlineFormCustomSelectPref">
+                            <option selected>Select Country</option>
+                            <option value="2">Taiwan</option>
+                            <option value="3">USA</option>
+                            <option value="4">Japna</option>
+                            <option value="4">Britian</option>
+                        </select>
+                        <select class="custom-select state" id="inlineFormCustomSelectPref">
+                            <option selected>State / Province</option>
+                            <option value="2">Taichung</option>
+                            <option value="3">Tainan</option>
+                            <option value="4">Kaohsiung</option>
+                            <option value="4">Taipei</option>
+                        </select>
+                        <select class="custom-select country" id="inlineFormCustomSelectPref">
+                            <option selected>Zip / Postal Code</option>
+                            <option value="2">403</option>
+                            <option value="3">401</option>
+                            <option value="4">402</option>
+                            <option value="4">407</option>
+                        </select>
+                        <button type="button" class="update btn px-3">UPDATE TOTAL <i class="fas fa-sync-alt ml-2"></i></button>
+                    </div>
+                    <div class="col-md-6 summary">
+                        <p class="title strong_black">CART TOTAL</p>
+                        <div class="block">
+                            <div class="wrap">
+                                <table class="table">
+
+                                    <tbody>
+                                        <tr>
+                                            <th class="first" scope="row">CART SUBTOTAL</th>
+                                            <td class="first">$ 1299,00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">SHIPPING</th>
+                                            <td>Free Shipping</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">CART TOTAL</th>
+                                            <td>1299,00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="wrap_check d-flex"> <a class="btn checkout ml-auto" href="checkout.html">PROCEED TO
+                                CHECKOUT <i class="fas fa-check"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-fluid middle_size">
+            <div class="container">
+                <div class="main_footer">
+                    <div class="row footer_info">
+                        <div class="col-md-3 contact">
+                            <img class="logo" src="pics/logo_grey.png" alt="logo">
+                            <p class="description">Lorem ipsum dolor sit amet. <br> Lorem ipsum dolor sit.</p>
+                            <div class="address">
+                                <a href="#">
+
+                                    <i class="fas fa-map-marker-alt"></i> Connaugt Road Central Suite 18B,148 <br> New
+                                    Yankee
+                                </a>
+
+
+                            </div>
+                            <div class="phone">
+
+                                <a href="tel:+1(555)3332211"><i class="fas fa-phone"></i> +1(555)333 22 11</a>
+
+                            </div>
+                            <div class="mail">
+
+                                <a href="mailto:info@schon.chair"><i class="far fa-envelope"></i> info@schon.chair</a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 site_link">
+                            <div class="row">
+                                <div class="col-md-4 categories">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item title">Categories</li>
+                                        <li class="list-group-item"><a href="#">Chairs</a></li>
+                                        <li class="list-group-item"><a href="#">Sofas</a></li>
+                                        <li class="list-group-item"><a href="#">Living</a></li>
+                                        <li class="list-group-item"><a href="#">Bedroom</a></li>
+                                        <li class="list-group-item"><a href="#">Tables</a></li>
+                                        <li class="list-group-item"><a href="#">New</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item title">Information</li>
+                                        <li class="list-group-item"><a href="about.html">About us</a></li>
+                                        <li class="list-group-item"><a href="contact.html">Contact Us</a></li>
+                                        <li class="list-group-item"><a href="blog-postlist.html">Blog</a></li>
+                                        <li class="list-group-item"><a href="#">Privacy Policy</a></li>
+                                        <li class="list-group-item"><a href="#">Customer Service</a></li>
+                                        <li class="list-group-item"><a href="#">FAQs</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item title">Account</li>
+                                        <li class="list-group-item"><a href="#">My Account</a></li>
+                                        <li class="list-group-item"><a href="#">Order Tracking</a></li>
+                                        <li class="list-group-item"><a href="#">Wish List</a></li>
+                                        <li class="list-group-item"><a href="#">Shopping Cart</a></li>
+                                        <li class="list-group-item"><a href="#">Checkout</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 subscribe">
+                            <p class="title">Sign Up Newsletter</p>
+                            <p class="description">Subscribe now to get 15% off
+                                on any product</p>
+                            <div class="input-group user_input hollow">
+                                <input type="text" class="form-control user_email" placeholder=" Your email" aria-label="email"
+                                    aria-describedby="email">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary sub_bt" type="button" id="subscribe"><i
+                                            class="fas fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                            <p class="font-weight-bold follow">Follow Us</p>
+                            <div class="social_icon">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="all_rights">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 words">
+                        &#169; <span class="logo">schön.</span>
+                        - All rights Reserved
+                    </div>
+                    <div class="col-md-6"></div>
+                    <div class="col-md-3 visa">
+                        <img src="pics/payment.png" alt="payment">
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="plug_in/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/action.js"></script>
+</body>
+
+
+</html>

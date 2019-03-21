@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:image" content="https://markdesigner.github.io/Schon-Website/pics/share-cover.jpg">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <link rel="icon" href="pics/logo_small.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="plug_in/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"> -->
+    <!-- <link rel="stylesheet" href="plug_in/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i|Oxygen:300,400,700"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/fontello.css">
+    <title>Schon Home </title>
+</head>
+
+<body class="index">
+    <!-- shopping_cart shadow -->
+    <div id="full_grey_pad"></div>
+    <!-- Modal -->
+    <div class="modal fade" id="subModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content newsletter_content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="title">JOIN OUR NEWSLETTER</h4>
+                    <h6 class="description">Subscribe now to get <span>15%</span> off on any product!</h6>
+                    <div class="input-group mb-2">
+                        <input type="text" class="input_email form-control" placeholder="Enter your e-mail" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <button type="submit" class="red_round_bt rounded_bt btn px-3" data-dismiss="modal">SUBSCRIBE</button>
+                    <div class="not_again custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Don't show this popup again</label>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search_box">
+        <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="input-group m-auto">
+                            <input type="text" class="search form-control" placeholder="Search..." aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-sm">
+                            <button type="button" class="mic_bt btn"><i class="fas fa-microphone"></i></button>
+                            <button type="button" class="search_bt btn" data-dismiss="modal"><i class="fas fa-search"></i></button>
+                        </div>
+                        <button type="button" class="cancel btn" data-dismiss="modal">&times;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="short_info">
+        <div class="container clearfix info_container">
+            <ul class="nav contact_info float-left">
+                <li class="nav-item">
+                    <div class="phone">
+                        <a class="nav-link" href="tel:+1(555)3332211"><i class="fas fa-phone"></i> +1(555)333 22 11</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="mail">
+                        <a class="nav-link" href="mailto:info@schon.chair"><i class="far fa-envelope"></i>
+                            info@schon.chair</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="nav user_bt float-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="page404.html">Order Track</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">My Account</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="checkout.html">Checkout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header my-2">
+        <div class="container ">
+
+            <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+                <a id="logo" class="navbar-brand" href="index.html"><img src="pics/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <button type="button" id="products_dropdown" class="nav-link mx-auto products_dropdown"
+                                data-toggle="modal" data-target="#products-modal">
+                                PRODUCTS <i class="fas fa-angle-down"></i>
+                            </button>
+
+                        </li>
+                        <div class="modal fade" id="products-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content text-left">
+                                    <div id="triangle_products" class="triangle"></div>
+
+                                    <div class="modal-body">
+                                        <div class="row menu">
+                                            <div class="col-md-6 col-lg categories">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item title">SOFAS & ARMCHAIRS</li>
+                                                    <hr class="short_strong text-left mr-auto ml-0">
+                                                    <li class="list-group-item"><a href="product-list.html">Sofas</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Armchairs</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Poufs</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Footstools</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Lounge
+                                                            Chairs</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6 col-lg categories">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item title">TABLES & CHAIRS</li>
+                                                    <hr class="short_strong text-left mr-auto ml-0">
+                                                    <li class="list-group-item"><a href="product-list.html">Chairs</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Stools</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Benches</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Coffe
+                                                            Tables</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Console
+                                                            Tables</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Secretary
+                                                            Desks</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6 col-lg categories">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item title">KITCHEN FURNITURE</li>
+                                                    <hr class="short_strong text-left mr-auto ml-0">
+                                                    <li class="list-group-item"><a href="product-list.html">Kitchen
+                                                            Taps</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Breakfast
+                                                            time</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Cooking</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Food
+                                                            Storage Boxes</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Spice
+                                                            Jars</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Napskins</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Oven
+                                                            Gloves</a></li>
+
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6 col-lg categories">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item title">OFFICE</li>
+                                                    <hr class="short_strong text-left mr-auto ml-0">
+                                                    <li class="list-group-item"><a href="product-list.html">office
+                                                            Desks</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Meeting
+                                                            Tables</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Task
+                                                            Chairs</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6 col-lg categories">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item title">LIGHTING</li>
+                                                    <hr class="short_strong text-left mr-auto ml-0">
+                                                    <li class="list-group-item"><a href="product-list.html">FLOOR
+                                                            Lamps</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Wall
+                                                            Lamps</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Ceiling
+                                                            Lamps</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Table
+                                                            Lamps</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Spotlights</a></li>
+                                                    <li class="list-group-item"><a href="product-list.html">Light
+                                                            Letters</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row hot_products">
+                                            <div class="col-md-12 col-lg-6 pb-4">
+                                                <div class="hot-1 position-relative">
+                                                    <img class="photo" src="pics/products_dropdown/product-1.png" alt="hot-product-1">
+                                                    <div class="words position-absolute">
+                                                        <h3 class="hot-1-title text-center">SOFAS</h3>
+                                                        <p class="discount text-center">50% OFF</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-6">
+                                                <div class="hot-2 position-relative">
+                                                    <img class="hot-2" src="pics/products_dropdown/product-2.png" alt="hot-product-2">
+                                                    <div class="words position-absolute">
+                                                        <h4 class="hot-2-title">TOTEM FLOOR LAMP</h4>
+                                                        <a class="action" href="#">SHOP NOW</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog-detail.html">PAGES</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog-postlist.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item search">
+                            <button type="button" class="btn" data-toggle="modal" data-target="#search-modal">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </li>
+                        <li class="nav-item dropdown shopping_cart">
+
+                            <a class="nav-link dropdown_big shopping_cart_a" href="#" id=" navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-shopping-bag mr-2"></i>
+                                <div class="word"><strong>SHOPPING CART</strong>
+                                    <br>3 items
+                                    $74.00
+                                </div>
+                            </a>
+                            <div id="shopping_menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div id="shopping_triangle" class="triangle"></div>
+
+                                <div class="container">
+                                    <div class="row mb-3">
+                                        <div class="col-4">
+                                            <a href="product-detail.html">
+                                                <img src="pics/furniture/office chair/chair2.png" alt="pic">
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="words">
+                                                <p class="title mb-1">Egon Wooden Chair</p>
+                                                <span class="price">$55,00</span>
+                                                <p class="quantity">QTY : 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <a class="cancel" href="#"> &times;</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-4">
+                                            <a href="product-detail.html">
+                                                <img src="pics/furniture/office chair/chair2.png" alt="pic">
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="words">
+                                                <p class="title mb-1">Egon Wooden Chair</p>
+                                                <span class="price">$55,00</span>
+                                                <p class="quantity">QTY : 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <a class="cancel" href="#"> &times;</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a href="product-detail.html">
+                                                <img src="pics/furniture/office chair/chair2.png" alt="pic">
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="words">
+                                                <p class="title mb-1">Egon Wooden Chair</p>
+                                                <span class="price mb-1">$55,00</span>
+                                                <p class="quantity">QTY : 1</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <a class="cancel" href="#"> &times;</a>
+                                        </div>
+
+                                    </div>
+                                    <hr>
+                                    <p class="mean float-left">Sub Total</p>
+                                    <p class="price text-right">$ 799,00</p>
+                                    <hr>
+                                    <div class="button text-center">
+                                        <button type="submit" class="view_cart rounded_bt btn px-3 mr-3" data-dismiss="modal">
+                                            <a href="shopping-cart.html">VIEW CART</a>
+                                        </button>
+                                        <button type="submit" class="checkout rounded_bt btn px-3" data-dismiss="modal">
+                                            <a href="checkout.html">CHECKOUT</a>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="main_items">
+
+        <div class="container">
+            <div class="row top">
+                <div class="new_collection col-md-12 col-lg-6 "><img class="" src="pics/new_collection.png" alt="new_collection">
+                    <div class="words">
+                        <p class="tag">FURNITURE DESIGNS IDEAS</p>
+                        <h3 class="title">New</h3>
+                        <p class="subtitle">Collection</p>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+                        <h4 class="price">
+                            <a href="product-detail.html"> $ 79.00</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6 middle_item">
+                            <img src="pics/leather_sofa.png" alt="leather_sofa">
+                            <p class="category">SOFAS & ARMCHAIRS</p>
+                            <h3 class="title">3 Seater Leather <br> Sofa</h3>
+                            <div class="blue_circle_price">
+                                <p><span>$ 659.00</span> <br> $499.00 </p>
+                            </div>
+                            <div class="shopnow_angle"><a href="product-list.html">
+                                    <span>SHOP NOW</span><i class="fas fa-angle-right"></i>
+                                </a>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="col-md-6 right_item">
+
+                            <div class="top">
+                                <div class="bag">
+
+                                    <img src="pics/index/red-bag.png" alt="pic">
+                                    <div class="top_words">
+                                        <h4 class="title">ACRYLIC FARBRIC <br> BEAN BAG</h4>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star "></i>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_words">
+                                        <h4 class="price">$ 99.00</h4>
+                                        <a class="shopnow" href="product-detail.html">SHOP NOW</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="chair">
+                                    <img src="pics/index/blue-chair.png" alt="pic">
+
+                                    <h4 class="description">CHAIR WITH <br> ARMRESTS</h4>
+                                    <div class="bottom_words">
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+
+                                        <div class="price"><span>$ 129.00 </span><br> $ 99.00 </div>
+                                    </div>
+                                    <div class="shopnow_angle"><a href="product-detail.html">
+                                            HURRY UP!<i class="fas fa-angle-right"></i>
+                                        </a>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row bottom clearfix">
+                <div class="col-md-12 col-lg-4 left_item">
+
+                    <div class="top">
+                        <img src="pics/index/home-3.png" alt="pic">
+                        <div class="words">
+                            <p class="category">Chairs</p>
+                            <h3 class="title">ZIO FINNING CHAIR</h3>
+                        </div>
+                        <div class="shopnow_angle"><a href="product-detail.html">
+                                <span>SHOP NOW</span><i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <img src="pics/index/home-4.png" alt="pic">
+                        <div class="words">
+                            <p class="category">Accessories / Lighting</p>
+                            <h3 class="title">TOTEM FLOOR LAMP</h3>
+                        </div>
+                        <div class="shopnow_angle"><a href="product-detail.html">
+                                <span>SHOP NOW</span><i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-12 col-lg-8 big_item">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-interval="2000">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="pics/index/home-big.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p class="tag">FURNITURE DESIGNS IDEAS</p>
+                                    <h3 class="title"><strong>Upholstered fabric</strong><br>Counter stool</h3>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="http://unsplash.it/765/578" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p class="tag">FURNITURE DESIGNS IDEAS</p>
+                                    <h3 class="title"><strong>SINNERLIG bamboo</strong><br>Peadant lamp</h3>
+                                    <p class="description">Designer Ilse Crawford created this lamp shade made of
+                                        bamboo lattice.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="http://unsplash.it/765/578" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p class="tag">FURNITURE DESIGNS IDEAS</p>
+                                    <h3 class="title"><strong>Gunnared sofa</strong><br>Gunnared medium gray</h3>
+                                    <p class="description">This sofa can be arranged any way you like for your space at
+                                        home.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <div class="feature_bar">
+        <div class="container">
+            <div class="control_bar clearfix">
+                <ul class="nav float-left">
+                    <li class="nav-item active">
+                        <a class="nav-link feature_bt feature" href="#feature">FEATURED</a>
+
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link latest_bt feature" href="#latest">LATEST</a>
+
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link best_seller_bt" href="#best">BEST SELLER</a>
+                    </li>
+                </ul>
+                <div class="control_bt float-right">
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn owl_prev_bt feature_bt_prev"><i class="icon-angle-left left cbt"></i></button>
+                        <button type="button" class="btn owl_next_bt feature_bt_next"><i class="icon-angle-right right cbt"></i></button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="moving_products">
+                <div class="owl-carousel owl-theme owl_feature">
+                    <div class="item">
+                        <a href="product-detail.html"><img src="pics/product-list/product1.png" alt="pic"></a> 
+                        <div class="words">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+
+                            <h4 class="title">Bombi Chair</h4>
+                            <div class="price">
+                                <i class="fas fa-euro-sign"></i>
+                                <span>399.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="product-detail.html"><img src="pics/product-list/product2.png" alt="pic"></a> 
+                        <div class="words">
+                            <h4 class="title">Marvelous Modern 3 Seater</h4>
+                            <div class="price">
+                                <i class="fas fa-euro-sign"></i>
+                                <span>399.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-hash="feature">
+                        <a href="product-detail.html"><img src="pics/product-list/product3.png" alt="pic"></a> 
+                        <div class="words">
+                            <span class="discount">15% Off</span>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h4 class="title">Chair with armrests</h4>
+                            <div class="price">
+                                <i class="fas fa-euro-sign"></i>
+                                <span>399.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <a href="product-detail.html"><img src="pics/product-list/product4.png" alt="pic"></a> 
+                        <div class="words">
+                            <h4 class="title">Bombi Chair</h4>
+                            <div class="price">
+                                <i class="fas fa-euro-sign"></i>
+                                <span>399.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-hash="latest">
+                        <a href="product-detail.html"><img src="pics/product-list/product5.png" alt="pic"></a> 
+                        <div class="words">
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+
+                            <h4 class="title">Bombi Chair</h4>
+                            <div class="price">
+                                <i class="fas fa-euro-sign"></i>
+                                <span>399.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="product-detail.html"><img src="pics/product-list/product6.png" alt="pic"></a> 
+                        <div class="words">
+                            <h4 class="title">Marvelous Modern 3 Seater</h4>
+                            <div class="price">
+                                <i class="fas fa-euro-sign"></i>
+                                <span>399.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="product-detail.html"><img src="pics/product-list/product7.png" alt="pic"></a> 
+                        <div class="words">
+                            <span class="discount">15% Off</span>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h4 class="title">Chair with armrests</h4>
+                            <div class="price">
+                                <i class="fas fa-euro-sign"></i>
+                                <span>399.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item" data-hash="best">
+                        <a href="product-detail.html"><img src="pics/product-list/product8.png" alt="pic"></a> 
+                        <div class="words">
+                            <h4 class="title">Bombi Chair</h4>
+                            <div class="price">
+                                <i class="fas fa-euro-sign"></i>
+                                <span>399.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="still_products">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="pics/index/home-stillproduct-1.png" alt="pic">
+                        <div class="words">
+                            <p class="description">Wall Decor</p>
+                            <h3 class="title">CLOCKs</h3>
+                        </div>
+                        <div class="shopnow_angle"><a href="product-detail.html">
+                                <span>VIEW</span><i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="pics/index/home-stillproduct-2.png" alt="pic">
+                        <div class="words">
+                            <p class="description">Coffee Tables</p>
+                            <h3 class="title">S.O.S BLOCKS</h3>
+                        </div>
+                        <div class="shopnow_angle"><a href="product-detail.html">
+                                <span>VIEW</span><i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="pics/index/home-stillproduct-3.png" alt="pic">
+                        <div class="words">
+                            <p class="description">Floor Lamps</p>
+                            <h3 class="title">ROCKING LAMP</h3>
+                        </div>
+                        <div class="shopnow_angle"><a href="product-detail.html">
+                                <span>VIEW</span><i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="best_seller">
+        <div class="container ">
+            <div class="control_bar clearfix">
+                <h2 class="title float-left">BEST SELLER</h2>
+                <div class="control_bt float-right">
+
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn owl_prev_bt best_bt_prev"><i class="icon-angle-left left cbt"></i></button>
+                            <button type="button" class="btn owl_next_bt best_bt_next"><i class="icon-angle-right right cbt"></i></button>
+    
+                        </div>
+                    </div>
+            </div>
+            <div class="owl-carousel owl-theme owl_best">
+
+                <div class="item">
+                    <div class="product">
+                        <a href="product-detail.html"><img src="pics/product-list/product8.png" alt="pic"></a> 
+                        <div class="tag">
+                            <p class="new"> NEW</p>
+                        </div>
+                        <div class="cover">
+                            <ul class="nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#"> <i class="fas fa-shopping-bag"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="far fa-eye"></i></a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="words">
+                        <h3 class="title">Puff Chair</h3>
+                        <span class="price"><i class="fas fa-euro-sign"></i>287,00</span>
+
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="product">
+                        <a href="product-detail.html"><img src="pics/product-list/product9.png" alt="pic"></a> 
+
+                        <div class="cover">
+                            <ul class="nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#"> <i class="fas fa-shopping-bag"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="far fa-eye"></i></a>
+                                </li></a>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="words">
+                        <h3 class="title">Bombi Chair</h3>
+                        <span class="price"><i class="fas fa-euro-sign"></i>399,00</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product">
+                        <a href="product-detail.html"><img src="pics/product-list/product7.png" alt="pic"></a> 
+
+                        <div class="cover">
+                            <ul class="nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#"> <i class="fas fa-shopping-bag"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="far fa-eye"></i></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="words">
+                        <h3 class="title">Wood Chair</h3>
+                        <span class="price"><i class="fas fa-euro-sign"></i>198,00</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product best_4">
+                        <a href="product-detail.html"><img src="pics/product-list/product6.png" alt="pic"></a> 
+
+                        <div class="tag">
+                            <p class="discount">15% Off</p>
+                            <p class="new"> NEW</p>
+                        </div>
+                        <div class="cover">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> <i class="fas fa-shopping-bag"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="far fa-eye"></i></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="words">
+                        <h3 class="title">Puff Chair</h3>
+                        <span class="price"><i class="fas fa-euro-sign"></i>287,00</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product">
+                        <a href="product-detail.html"><img src="pics/product-list/product5.png" alt="pic"></a> 
+                        <div class="cover">
+                            <ul class="nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#"> <i class="fas fa-shopping-bag"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="far fa-eye"></i></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="words">
+                        <h3 class="title">Fancy Chair</h3>
+                        <span class="price"><i class="fas fa-euro-sign"></i>200,00</span>
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="product">
+                        <a href="product-detail.html"><img src="pics/product-list/product4.png" alt="pic"></a> 
+                        <div class="tag">
+                            <p class="new"> NEW</p>
+                        </div>
+                        <div class="cover">
+                            <ul class="nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#"> <i class="fas fa-shopping-bag"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="far fa-eye"></i></a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="words">
+                        <h3 class="title">Puff Chair</h3>
+                        <span class="price"><i class="fas fa-euro-sign"></i>287,00</span>
+
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="product">
+                        <a href="product-detail.html"><img src="pics/product-list/product3.png" alt="pic"></a> 
+                        <div class="cover">
+                            <ul class="nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#"> <i class="fas fa-shopping-bag"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="far fa-eye"></i></a>
+                                </li></a>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="words">
+                        <h3 class="title">Bombi Chair</h3>
+                        <span class="price"><i class="fas fa-euro-sign"></i>399,00</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product">
+                        <a href="product-detail.html"><img src="pics/product-list/product2.png" alt="pic"></a> 
+                        <div class="cover">
+                            <ul class="nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#"> <i class="fas fa-shopping-bag"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="far fa-eye"></i></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="words">
+                        <h3 class="title">Wood Chair</h3>
+                        <span class="price"><i class="fas fa-euro-sign"></i>198,00</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product best_4">
+                        <a href="product-detail.html"><img src="pics/product-list/product1.png" alt="pic"></a> 
+                        <div class="tag">
+                            <p class="discount">15% Off</p>
+                            <p class="new"> NEW</p>
+                        </div>
+                        <div class="cover">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> <i class="fas fa-shopping-bag"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="far fa-eye"></i></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="words">
+                        <h3 class="title">Puff Chair</h3>
+                        <span class="price"><i class="fas fa-euro-sign"></i>287,00</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product">
+                        <a href="product-detail.html"><img src="pics/product-list/product9.png" alt="pic"></a> 
+
+                        <div class="cover">
+                            <ul class="nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#"> <i class="fas fa-shopping-bag"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="far fa-eye"></i></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="words">
+                        <h3 class="title">Fancy Chair</h3>
+                        <span class="price"><i class="fas fa-euro-sign"></i>200,00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="brands">
+        <div class="container ">
+            <h2 class="title">
+                BRANDS
+                <small>FURNITURE</small>
+            </h2>
+            <div class="brands_bar position-relative">
+
+            <i class="fas fa-angle-left brands_bt_prev position-absolute"></i>
+            <i class="fas fa-angle-right brands_bt_next position-absolute"></i>
+                <div class="owl-carousel owl-theme owl_brands">
+
+                    <div class="item">
+                        <img src="pics/brands/devon.png" alt="logo">
+                    </div>
+                    <div class="item">
+
+                        <img src="pics/brands/gan.png" alt="logo">
+
+
+                    </div>
+                    <div class="item">
+
+                        <img src="pics/brands/artek.png" alt="logo">
+
+
+                    </div>
+                    <div class="item">
+
+                        <img src="pics/brands/toncelli.png" alt="logo">
+
+
+                    </div>
+                    <div class="item">
+
+                        <img src="pics/brands/duravit.png" alt="logo">
+
+
+                    </div>
+                    <div class="item">
+
+                        <img src="pics/brands/zanotta.png" alt="logo">
+
+
+                    </div>
+                    <div class="item">
+
+                        <img src="pics/brands/devon.png" alt="logo">
+
+
+                    </div>
+                    <div class="item">
+
+                        <img src="pics/brands/gan.png" alt="logo">
+
+
+                    </div>
+                    <div class="item">
+
+                        <img src="pics/brands/artek.png" alt="logo">
+
+
+                    </div>
+                    <div class="item">
+
+                        <img src="pics/brands/toncelli.png" alt="logo">
+
+
+                    </div>
+                    <div class="item">
+
+                        <img src="pics/brands/duravit.png" alt="logo">
+
+
+                    </div>
+                    <div class="item">
+
+                        <img src="pics/brands/zanotta.png" alt="logo">
+
+
+                    </div>
+
+                </div>
+            </div>
+            
+
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="main_footer">
+                    <div class="guarantee">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <i class="fas fa-plane float-left"></i>
+                                <div class="words float-right">
+                                    <span class="font-weight-bold title">FREE SHIPPING</span> <br>
+                                    <span class="description">Free shipping on all US order</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <i class="far fa-life-ring"></i>
+                                <div class="words float-right">
+                                    <span class="font-weight-bold title">SUPPROT 24/7</span> <br>
+                                    <span class="description">We support 24 hours a day</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <i class="fas fa-box-open"></i>
+                                <div class="words float-right">
+                                    <span class="font-weight-bold title">GIFT CARDS</span> <br>
+                                    <span class="description">Give perfect gift</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <i class="far fa-money-bill-alt"></i>
+                                <div class="words float-right">
+                                    <span class="title font-weight-bold">PAYMENT 100% SECURE</span> <br>
+                                    <span class="description">Payment 100% secure</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="row footer_info">
+                        <div class="col-md-3 contact">
+                            <img class="logo" src="pics/logo_grey.png" alt="logo">
+                            <p class="description">Lorem ipsum dolor sit amet. <br> Lorem ipsum dolor sit.</p>
+                            <div class="address">
+                                <a href="#">
+
+                                    <i class="fas fa-map-marker-alt"></i> Connaugt Road Central Suite 18B,148 <br> New
+                                    Yankee
+                                </a>
+
+
+                            </div>
+                            <div class="phone">
+
+                                <a href="tel:+1(555)3332211"><i class="fas fa-phone"></i> +1(555)333 22 11</a>
+
+                            </div>
+                            <div class="mail">
+
+                                <a href="mailto:info@schon.chair"><i class="far fa-envelope"></i> info@schon.chair</a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 site_link">
+                            <div class="row">
+                                <div class="col-md-4 categories">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item title">Categories</li>
+                                        <li class="list-group-item"><a href="product-list.html">Chairs</a></li>
+                                        <li class="list-group-item"><a href="product-list.html">Sofas</a></li>
+                                        <li class="list-group-item"><a href="product-list.html">Living</a></li>
+                                        <li class="list-group-item"><a href="product-list.html">Bedroom</a></li>
+                                        <li class="list-group-item"><a href="product-list.html">Tables</a></li>
+                                        <li class="list-group-item"><a href="product-list.html">New</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item title">Information</li>
+                                        <li class="list-group-item"><a href="about.html">About us</a></li>
+                                        <li class="list-group-item"><a href="contact.html">Contact Us</a></li>
+                                        <li class="list-group-item"><a href="blog-postlist.html">Blog</a></li>
+                                        <li class="list-group-item"><a href="page404.html">Privacy Policy</a></li>
+                                        <li class="list-group-item"><a href="page404.html">Customer Service</a></li>
+                                        <li class="list-group-item"><a href="#">FAQs</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item title">Account</li>
+                                        <li class="list-group-item"><a href="page404.html">My Account</a></li>
+                                        <li class="list-group-item"><a href="page404.html">Order Tracking</a></li>
+                                        <li class="list-group-item"><a href="page404.html">Wish List</a></li>
+                                        <li class="list-group-item"><a href="shopping-cart.html">Shopping Cart</a></li>
+                                        <li class="list-group-item"><a href="checkout.html">Checkout</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 subscribe">
+                            <p class="title">Sign Up Newsletter</p>
+                            <div class="input-group user_input">
+                                <input type="text" class="form-control user_email" placeholder=" Your email" aria-label="email"
+                                    aria-describedby="email">
+                                <button class="btn btn-outline-secondary sub_bt " type="button" id="subscribe">Subscribe</button>
+                            </div>
+                            <p class="font-weight-bold follow">Follow Us</p>
+                            <div class="social_icon">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="all_rights">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 words">
+                        &#169; <span class="logo">schön.</span>
+                        - All rights Reserved
+                    </div>
+                    <div class="col-md-6"></div>
+                    <div class="col-md-3 visa">
+                        <img src="pics/payment.png" alt="payment">
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+    <script src="bundle.js"></script>
+</body>
+
+</html>

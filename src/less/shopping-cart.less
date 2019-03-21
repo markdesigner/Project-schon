@@ -1,0 +1,223 @@
+// @white_color: #ffffff;
+// @header_nav:#494949;
+// @short_info_text: #a1a1a1;
+// @top-bar-grey: #282828;
+// @deep-blue: #2c3e65;
+// @grey-text: #dbdbdb;
+// @grey_deep_text: #808080;
+// @black-text: #535353;
+// @grey_shopnow: #979797;
+// @black: #000000;
+// @footer_title: #575757;
+// @footer_link:#a0a0a0;
+// @grey_91:#919191;
+// @cover_grey:#f4f4f4;
+// @user_input_grey:#f7f7f7;
+// @aside_grey:#a0a0a0;
+// @star:#c8a760;
+// @red_button:#f53434;
+
+@import "basic.less";
+
+
+.shopping-cart {
+    .navigation{
+        .one{
+            .number{
+                color:black;
+                border-color:black;
+            }
+            .title{
+                color:black;
+            }
+         }
+    }    
+
+    .product {
+        margin-bottom: 40px;
+        .table {
+            thead {
+                th {
+                    border-top: none;
+                    color: #808080;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    font-size: 18px;
+                }
+            }
+
+            tr {
+                th {
+                    img {
+                        width: 106px;
+                        height: 106px;
+                    }
+                }
+
+                td {
+                    vertical-align: middle;
+
+                }
+
+                .name {
+                    color: #808080;
+                    font-weight: 600;
+                }
+
+                .price {
+                    font-weight: 600;
+                }
+
+                .total {
+                    font-weight: 600;
+                }
+                
+                .quantity {
+                    padding-left: 20px;
+                }
+
+                .custom-select {
+                    width: 50px;
+                    background-color: @grey_pad;
+                    font-weight: 600;
+                }
+            }
+
+        }
+    }
+    .discount_code{
+        .code_input{
+            font-size: 14px;
+    border-radius: 0;
+    padding: 18px 5px 18px 16px;
+        }
+        .apply{
+            background-color: @star;
+            color:white;
+            border-radius: 0;
+            padding: 5px 40px;
+        }
+        .input{
+            margin-bottom: 60px;
+        }
+        .user_input{
+            .col-8{
+                padding-right: 10px;
+            }
+            .col-4{
+                padding-left: 0;
+            }
+        }
+    }
+    .calculate{
+        .district{
+            select{
+                margin-bottom: 15px;
+                height: 50px;
+                color:@80;
+            }
+            .update{
+                background-color: @grey_pad;
+                color:@80;
+            }
+        }
+        .summary{
+            .block{
+                border:solid 1px @grey-text;
+            }
+            .wrap{
+                padding: 30px 40px;
+            }
+            tbody{
+                .first{
+                    border-top:none;
+                }
+                th{
+                    color:@80;
+                    font-weight: 500;
+                }
+                td{
+                    text-align: right;
+                    font-weight: 600;
+                }
+            }
+            
+        }
+    }
+
+
+
+    //media query 
+
+    // iphone
+    @media (max-width: 767.98px) {
+       main{
+           .navigation{
+               .wrap{
+                   max-width: 300px;
+                   .number{
+                       font-size: 12px;
+                       width: 60px;
+                       height: 60px;
+                       line-height: 60px;
+
+                   }
+                   .title{
+                       font-size: 12px;
+                   }
+                   .one{
+                    margin-right: -28px;
+                   }
+                   .two{
+                    margin-right: -28px;
+                   }
+                   .three{
+                    margin-right: -28px;
+                   }
+                   .line{
+                       width: 25px;
+                   }
+                   hr{
+                       margin-top: 34px;
+                   }
+               }
+           }
+           .summary{
+               .title{
+                   margin-top: 40px;
+               }
+           }
+       }
+
+        footer {
+            .main_footer {
+                .subscribe {
+                    text-align: center !important;
+                }
+            }
+        }
+
+    }
+
+    // ipad
+    @media (max-width: 991.98px)and (min-width:768px) {
+        aside {
+            .hot_sale {
+                .col-md-3 {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        .page_number {
+            margin-bottom: 100px;
+        }
+    }
+
+    // mac
+    // @media(min-width:992px){
+
+    // }
+
+
+}

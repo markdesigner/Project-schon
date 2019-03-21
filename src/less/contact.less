@@ -1,0 +1,125 @@
+// @white_color: #ffffff;
+// @header_nav:#494949;
+// @short_info_text: #a1a1a1;
+// @top-bar-grey: #282828;
+// @deep-blue: #2c3e65;
+// @grey-text: #dbdbdb;
+// @grey_deep_text: #808080;
+// @black-text: #535353;
+// @grey_shopnow: #979797;
+// @black: #000000;
+// @footer_title: #575757;
+
+@import "basic.less";
+
+
+.contact {
+    .user_input {
+
+        .contact_info {
+            color: @header_nav;
+
+            h3.title {
+                font-size: calc(26rem/16);
+                ;
+                letter-spacing: 1px;
+            }
+
+            .description {
+                font-size: calc(12rem/16);
+                ;
+                margin-bottom: 80px;
+            }
+
+            .row {
+                .title {
+                    font-size: calc(14rem/16);
+                    ;
+                    font-weight: 700;
+                }
+
+                a {
+                    font-size: calc(12rem/16);
+                    ;
+                    color: @header_nav;
+                }
+            }
+        }
+
+        .user_form {
+            .title {
+                font-size: calc(16rem/16);
+                color: @header_nav;
+                font-weight: 600;
+            }
+
+            .input-group {
+
+                input,
+                textarea {
+                    border-radius: 20px;
+                }
+
+            }
+
+            .send {
+                background-color: @header_nav;
+                // border-radius: 25px;
+                color: @white_color;
+                margin-top: 10px;
+                font-weight: 300;
+                font-size: calc(12rem/16);
+
+                &:hover {
+                    text-decoration: none;
+                }
+
+            }
+
+        }
+    }
+
+    .map {
+        height: 30vh;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    //media query 
+
+// iphone
+@media (max-width: 767.98px){
+    .user_input{
+       
+        .contact_ways{
+            margin-top: -30px;
+            margin-bottom: 30px;
+        }
+        .contact_ways>div{
+            text-align: center;
+        }
+        .user_form{
+            .title{
+                text-align: center;
+            }
+        }
+    }
+    .map{
+        margin-bottom:10px;
+    }
+}
+
+// ipad
+// @media (max-width: 991.98px)and (min-width:768px) {
+// }
+
+// mac
+// @media(min-width:992px){
+
+// }
+
+
+}
